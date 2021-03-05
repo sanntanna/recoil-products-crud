@@ -5,16 +5,14 @@ import { filterProductsValue } from "../store";
 import { Form, Button } from "react-bootstrap";
 
 const FilterProducts = () => {
-  const [filterProductsState, filterProducts] = useRecoilState(
-    filterProductsValue
-  );
+  const [filterProductsState, setFilterProducts] = useRecoilState(filterProductsValue);
 
   const filter = (event) => {
     const { value } = event.target;
-    filterProducts(value);
+    setFilterProducts(value);
   };
 
-  const clearFilter = () => filterProducts("");
+  const clearFilter = () => setFilterProducts("");
 
   return (
     <Form>

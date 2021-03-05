@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Form, Modal } from 'react-bootstrap';
 import { useRecoilState } from 'recoil';
-import { products } from '../../store';
+import { products } from '../store';
 
 const EditModal = (props) => {
   const { show, id, handleClose } = props;

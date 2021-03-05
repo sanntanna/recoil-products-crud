@@ -2,7 +2,7 @@ import React from "react";
 import { Button, Modal } from "react-bootstrap";
 import { useRecoilState } from "recoil";
 
-import { products } from "../../store";
+import { products } from '../store';
 
 const DeleteModal = (props) => {
   const { show, id, handleClose } = props;

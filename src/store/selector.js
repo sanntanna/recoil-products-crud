@@ -1,5 +1,5 @@
 import { selector } from 'recoil';
-import { products, filterProductsValue } from '.';
+import { products, filterProductsValue } from './atom';
 
 export const filtersProducts = selector({
   key: 'filterProducts',

@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import { Table, Button } from "react-bootstrap";
 
 import { useRecoilValue, useResetRecoilState } from "recoil";
-import { filterProducts, filterProductsValue, products } from "../store";
-import EditModal from "./modals/EditModal";
-import DeleteModal from "./modals/DeleteModal";
+import { filtersProducts, filterProductsValue, products } from "../store";
+import EditModal from '../modals/EditModal';
+import DeleteModal from '../modals/DeleteModal';
 
 const ListProducts = () => {
-  const productsState = useRecoilValue(filterProducts);
+  const productsState = useRecoilValue(filtersProducts);
   const resetList = useResetRecoilState(products);
   const resetfilterProductsValue = useResetRecoilState(filterProductsValue);
 

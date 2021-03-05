@@ -1,2 +1,2 @@
-export { products, filtersProductsValue } from './atom';
+export { products, filterProductsValue } from './atom';
 export { filtersProducts } from './selector';
