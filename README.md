@@ -1,3 +1,3 @@
-# Product's CRUD
+# A CRUD with React and Facebook Recoil
 
-CRUD made with React, Bootstrap and Recoil.js
+You know, the usual. Clone the repo, run yarn, then npm start.
