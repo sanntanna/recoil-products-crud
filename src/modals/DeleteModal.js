@@ -8,9 +8,7 @@ const DeleteModal = (props) => {
   const { show, id, handleClose } = props;
 
   const [productList, setProductList] = useRecoilState(products);
-  const product = productList.length
-    ? productList.find((item) => item.id === id)
-    : null;
+  const product = productList.length ? productList.find((item) => item.id === id) : null;
   const index = productList.findIndex((item) => item === product);
 
   const deleteProduct = () => {
